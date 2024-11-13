@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi Portafolio</h1>
+        <link rel="stylesheet" href="styles.css">
+        <head>
+            ...
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <head>
+        <style>
+            #sobre-mi {
+                padding: 40px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            #sobre-mi h2 {
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+    
+            #sobre-mi p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: #555;
+                margin-bottom: 15px;
+            }
+    
+            #sobre-mi strong {
+                color: #000;
+            }
+        </style>
+    </head>
+    
+
+    <section id="about">
+        
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy <strong>Roxana Rodríguez</strong>, desarrolladora web e ingeniera en sistemas en formación. Apasionada por la tecnología y enfocada en la seguridad informática.</p>
+        <p>Mi experiencia incluye desarrollo en <strong>C#</strong> y la creación de interfaces web usando HTML, CSS y JavaScript. Me especializo en proyectos de seguridad informática y en la creación de aplicaciones eficientes y seguras.</p>
+        <p>Mi objetivo es aportar mis habilidades en el sector bancario, ayudando a fortalecer la seguridad y eficiencia de sistemas críticos.</p>
+        <p>Creo en el aprendizaje continuo y en el poder de la tecnología para mejorar vidas y negocios. ¡Gracias por visitar mi portafolio!</p>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="proyecto">
+            <h3>Proyecto Bootstrap</h3>
+            <p>Proyecto desarrollado utilizando Bootstrap para una interfaz web responsiva y atractiva. Permite explorar cómo estructurar páginas de forma rápida y efectiva.</p>
+            <a href="https://github.com/tu-usuario/proyectoBootstrap" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="proyecto">
+            <h3>Software para Almacén</h3>
+            <p>Una pequeña aplicación diseñada para la gestión de inventario en un almacén, creada para facilitar el seguimiento de productos y mejorar la eficiencia.</p>
+            <a href="https://github.com/tu-usuario/softwareAlmacen" target="_blank">Ver en GitHub</a>
+        </div>
+        <!-- Puedes agregar más proyectos de esta forma -->
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Contacta conmigo en <a href="roxxannarodriguez@gmail.com">roxxannarodriguez@gmail.com</a></p>
+    </section>
+    <section>
+        <h2>Contacto</h2>
+        <form id="contact-form" action="https://formspree.io/f/mdkoeqgp" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <div class="redes-sociales">
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="https://github.com/tu-usuario" target="_blank">GitHub</a> |
+        <a href="https://instagram.com/roxanarodriguezdesarrolloweb" target="_blank">Instagram</a>
+    </div>
+    
+    
+    <script>
+        // Selecciona el formulario por su ID
+        const form = document.getElementById('contact-form');
+    
+        // Agrega un event listener para el envío del formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue
+            
+            // Envía el formulario a través de Formspree
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Mensaje enviado con éxito!');
+                    form.reset(); // Limpia todos los campos del formulario
+                } else {
+                    alert('Hubo un problema al enviar el formulario.');
+                }
+            }).catch(error => {
+                alert('Error al intentar enviar el formulario.');
+            });
+        });
+    </script>
+    
+    
+        
+        
+    </form>
+    
+
+    <footer>
+        <p>&copy; 2024 Roxana Rodríguez</p>
+    </footer>
+</body>
+</html>
