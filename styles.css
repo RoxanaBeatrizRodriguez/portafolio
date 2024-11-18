@@ -1,0 +1,329 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto */
+    padding: 20px; /* Espaciado interno */
+    
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilo base (para pantallas grandes, escritorio) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/* Aplicar las tipografías */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #34495e; /* Texto principal */
+    background-color: #ecf0f1; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Fondo claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50; /* Color de títulos */
+}
+
+a {
+    color: #3498db; /* Color de enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1abc9c; /* Cambio de color al pasar el mouse */
+}
+
+/* Personalización de botones */
+button {
+    background-color: #3498db; /* Azul brillante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#sobre-mi, #proyectos, #contacto {
+    max-width: 800px; /* Ancho máximo para escritorio */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #sobre-mi, #proyectos, #contacto {
+        max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+    }
+
+    p, a, label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%; /* Botones ocupan todo el ancho */
+        padding: 10px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #contacto input, #contacto textarea {
+        font-size: 14px;
+    }
+}
+
+
+
+header {
+    background: #35424a; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+nav ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: #ffffff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+nav ul li a {
+    background: #35424a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    background: #475057; /* Color de fondo en hover */
+}
+
+
+section {
+    margin: 20px 0; /* Espaciado entre secciones */
+    padding: 20px; /* Espaciado interno */
+    background: #ffffff; /* Color de fondo de las secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente para h1 */
+}
+
+h2 {
+    font-size: 2em; /* Tamaño de fuente para h2 */
+}
+
+p {
+    font-size: 1.1em; /* Tamaño de fuente para párrafos */
+}
+
+
+h1, h2 {
+    color: #35424a; /* Color de los encabezados */
+}
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente para h1 */
+}
+
+h2 {
+    font-size: 2em; /* Tamaño de fuente para h2 */
+}
+
+p {
+    font-size: 1.1em; /* Tamaño de fuente para párrafos */
+}
+
+footer {
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 10px 0; /* Espaciado interno */
+    background: #35424a; /* Color de fondo del pie de página */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilo para enlaces */
+a {
+    color: #35424a; /* Color de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+#proyectos {
+    padding: 40px;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: auto;
+}
+
+#proyectos h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.proyecto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.proyecto a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+#contacto {
+    padding: 40px;
+    background-color: #f5f5f5;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contacto label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contacto button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #0056b3;
+}
+
+.redes-sociales p {
+    font-size: 16px;
+    color: #333;
+}
+
+.redes-sociales a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
